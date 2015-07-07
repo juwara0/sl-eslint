@@ -1,0 +1,69 @@
+{
+    "ecmaFeatures": {
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "defaultParams": true,
+        "forOf": true,
+        "generators": true,
+        "modules": true,
+        "objectLiteralComputedProperties": true,
+        "objectLiteralDuplicateProperties": true,
+        "objectLiteralShorthandMethods": true,
+        "objectLiteralShorthandProperties": true,
+        "restParams": true,
+        "spread": true,
+        "superInFunctions": true,
+        "templateStrings": true
+    },
+
+    "env": {
+        "es6": true,
+        "node": true
+    },
+
+    "rules": {
+        "brace-style": [ 2, "1tbs", { "allowSingleLine": false } ],
+        "comma-dangle": [ 2, "never" ],
+        "comma-spacing": [ 2, { "before": false, "after": true } ],
+        "comma-style": [ 2, "last" ],
+        "eqeqeq": [ 2 ],
+        "indent": [ 2, 4 ],
+        "linebreak-style": [ 2, "unix" ],
+        "max-len": [ 1, 80, 4 ],
+        "new-cap": [ 1, { "newIsCap": true, "capIsNew": true } ],
+        "no-caller": [ 1 ],
+        "no-else-return": [ 1 ],
+        "no-eval": [ 2 ],
+        "no-extend-native": [ 2 ],
+        "no-extra-bind": [ 1 ],
+        "no-extra-semi": [ 1 ],
+        "no-new": [ 1 ],
+        "no-trailing-spaces": [ 2, { "skipBlankLines": false } ],
+        "no-unreachable": [ 1 ],
+        "no-unused-vars": [ 2, { "vars": "all", "args": "after-used" } ],
+        "no-var": [ 2 ],
+        "prefer-const": [ 2 ],
+        "quotes": [ 1, "single" ],
+        "semi": [ 2, "always" ],
+        "semi-spacing": [ 2, { "before": false, "after": true } ],
+        "spaced-comment": [ 1, "always" ],
+        "space-before-blocks": [ 2, "always" ],
+        "space-before-function-paren": [ 2, "never" ],
+        "space-in-parens": [ 2, "always", {
+            "exceptions": [ "{}", "[]", "empty" ]
+        }],
+        "space-infix-ops": [ 2 ],
+        "space-unary-ops": [ 2, { "words": true, "nonwords": false } ],
+        "valid-jsdoc": [ 2, {
+            "prefer": {
+                "method": "function",
+                "return": "returns"
+            },
+            "requireParamDescription": true,
+            "requireReturn": true,
+            "requireReturnDescription": false
+        }],
+        "yoda": [ 1, "always" ]
+    }
+}
