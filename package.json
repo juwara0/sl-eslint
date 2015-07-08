@@ -1,27 +1,26 @@
 {
-  "name": "@joshforisha/sl-eslint",
-  "version": "0.0.1",
-  "description": "SoftLayer ESLint tool",
-  "main": "index.js",
-  "scripts": {
-    "test": "bin/sl-eslint.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/joshforisha/sl-eslint.git"
-  },
-  "keywords": [
-    "SoftLayer",
-    "eslint"
-  ],
-  "author": "Josh Forisha <josh@forisha.com> (http://joshforisha.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/joshforisha/sl-eslint/issues"
-  },
-  "homepage": "https://github.com/joshforisha/sl-eslint#readme",
-  "dependencies": {
-    "eslint": "^0.23.0",
-    "eslint-plugin-babel": "^1.0.0"
-  }
+    "name": "@joshforisha/sl-eslint",
+    "version": "0.0.1",
+    "description": "SoftLayer ESLint tool",
+    "main": "index.js",
+    "scripts": {
+        "test": "bin/sl-eslint.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/joshforisha/sl-eslint.git"
+    },
+    "keywords": [
+        "SoftLayer",
+        "eslint"
+    ],
+    "author": "Josh Forisha <josh@forisha.com> (http://joshforisha.com)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/joshforisha/sl-eslint/issues"
+    },
+    "homepage": "https://github.com/joshforisha/sl-eslint#readme",
+    "dependencies": {
+        "eslint": "^0.24.0"
+    }
 }
