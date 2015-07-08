@@ -88,10 +88,6 @@ module.exports = function( context ) {
                     match.index += 1;
                 }
 
-                console.log( match.index, shouldSkip( match.index ) ?
-                    'should skip' : 'should not skip'
-                );
-
                 if ( !shouldSkip( match.index ) ) {
                     while (
                         -1 !== ( nextLine = source.indexOf( '\n', position ) ) &&
