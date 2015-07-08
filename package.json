@@ -2,7 +2,9 @@
     "name": "@joshforisha/sl-eslint",
     "version": "0.0.3",
     "description": "SoftLayer ESLint tool",
-    "main": "index.js",
+    "bin": {
+        "sl-eslint": "./bin/sl-eslint"
+    },
     "scripts": {
         "test": "bin/sl-eslint.js"
     },
