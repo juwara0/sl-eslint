@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+SL_ESLINT_DIR="node_modules/sl-eslint"
+
+$SL_ESLINT_DIR/node_modules/.bin/eslint -c $SL_ESLINT_DIR/.eslintrc $*
