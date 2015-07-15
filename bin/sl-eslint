@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 
+NPM_BIN_DIR=`npm bin`
 SL_ESLINT_DIR="node_modules/sl-eslint"
 
-$SL_ESLINT_DIR/node_modules/.bin/eslint \
+$NPM_BIN_DIR/eslint \
     --config $SL_ESLINT_DIR/.eslintrc \
     --rulesdir $SL_ESLINT_DIR/rules/ \
     $*
