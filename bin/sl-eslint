@@ -1,9 +1,24 @@
 #!/usr/bin/env sh
 
-NPM_BIN_DIR=`npm bin`
-SL_ESLINT_DIR="node_modules/sl-eslint"
+ARGS="$*"
 
-$NPM_BIN_DIR/eslint \
-    --config $SL_ESLINT_DIR/.eslintrc \
-    --rulesdir $SL_ESLINT_DIR/rules/ \
-    $*
+function run_linter {
+    $ROOT_DIR/node_modules/.bin/eslint \
+        --config $ROOT_DIR/.eslintrc \
+        --rulesdir $ROOT_DIR/rules \
+        $ARGS
+}
+
+PKG_NAME="@joshforisha/sl-eslint"
+
+ROOT_DIR="`npm root`/$PKG_NAME"
+if [ -d $ROOT_DIR ]; then
+    run_linter
+fi
+
+ROOT_DIR="`npm root -g`/$PKG_NAME"
+if [ -d $ROOT_DIR ]; then
+    run_linter
+fi
+
+exit 1
