@@ -24,6 +24,7 @@
     },
 
     "rules": {
+        "array-bracket-spacing": [ 2, "always" ],
         "brace-style": [ 2, "1tbs", { "allowSingleLine": false } ],
         "comma-dangle": [ 2, "never" ],
         "comma-spacing": [ 2, { "before": false, "after": true } ],
