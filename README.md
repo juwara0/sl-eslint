@@ -1,12 +1,12 @@
 # SoftLayer ESLint Tool
-[![NPM Version](https://img.shields.io/npm/v/@joshforisha/sl-eslint.svg?style=flat-square)](https://www.npmjs.com/package/@joshforisha/sl-eslint)
+[![NPM Version](https://img.shields.io/npm/v/@joshforisha/sl-eslint.svg?style=flat-square)](https://www.npmjs.com/package/sl-eslint)
 
 Enforces the JavaScript code style of [softlayer/ember-style-guide](https://github.com/softlayer/ember-style-guide).
 
 ### Install package
 
 ```bash
-npm install @joshforisha/sl-eslint
+npm install sl-eslint
 ```
 
 Use the `-g` option if you'd like to install the tool globally.

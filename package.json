@@ -1,5 +1,5 @@
 {
-    "name": "@joshforisha/sl-eslint",
+    "name": "sl-eslint",
     "version": "0.0.7",
     "description": "SoftLayer ESLint tool",
     "bin": {
