@@ -11,7 +11,7 @@ function run_linter {
     exit $?
 }
 
-PKG_NAME="@joshforisha/sl-eslint"
+PKG_NAME="sl-eslint"
 
 ROOT_DIR="`npm root`/$PKG_NAME"
 if [ -d $ROOT_DIR ]; then
