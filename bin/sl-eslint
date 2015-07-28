@@ -2,7 +2,7 @@
 
 ARGS="$*"
 
-function run_linter {
+run_linter () {
     $ROOT_DIR/node_modules/.bin/eslint \
         --config $ROOT_DIR/.eslintrc \
         --rulesdir $ROOT_DIR/rules \
