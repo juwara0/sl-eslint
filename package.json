@@ -1,6 +1,6 @@
 {
     "name": "sl-eslint",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "SoftLayer ESLint tool",
     "bin": {
         "sl-eslint": "./bin/sl-eslint"
