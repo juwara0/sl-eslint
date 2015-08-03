@@ -30,7 +30,7 @@
         "comma-spacing": [ 2, { "before": false, "after": true } ],
         "comma-style": [ 2, "last" ],
         "eqeqeq": [ 2 ],
-        "indent": [ 2, 4 ],
+        "indent": [ 2, 4, { "SwitchCase": 1 } ],
         "linebreak-style": [ 2, "unix" ],
         "max-len": [ 2, 120, 4 ],
         "new-cap": [ 2, { "newIsCap": true, "capIsNew": true } ],
