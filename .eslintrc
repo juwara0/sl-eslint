@@ -31,6 +31,18 @@
         "comma-style": [ 2, "last" ],
         "enforce-newlines": [ 2, {
             "methods": [
+                "assert.deepEqual",
+                "assert.equal",
+                "assert.expect",
+                "assert.notDeepEqual",
+                "assert.notEqual",
+                "assert.notOk",
+                "assert.notPropEqual",
+                "assert.notStrictEqual",
+                "assert.ok",
+                "assert.propEqual",
+                "assert.strictEqual",
+                "assert.throws",
                 "Ember.assert",
                 "Ember.computed",
                 "Ember.observer",
@@ -39,8 +51,7 @@
             "properties": [
                 "attributeBindings",
                 "classNameBindings",
-                "classNames",
-                "needs"
+                "classNames"
             ]
         }],
         "eqeqeq": [ 2 ],
