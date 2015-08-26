@@ -45,15 +45,16 @@
         "no-unused-vars": [ 2, { "vars": "all", "args": "after-used" } ],
         "no-var": [ 2 ],
         "prefer-const": [ 2 ],
+        "prefer-short-literals": [ 2, 80 ],
         "quotes": [ 2, "single", "avoid-escape" ],
         "semi": [ 2, "always" ],
         "semi-spacing": [ 2, { "before": false, "after": true } ],
         "smart-spaces-in-paren": [ 2 ],
-        "spaced-comment": [ 2, "always" ],
         "space-before-blocks": [ 2, "always" ],
         "space-before-function-paren": [ 2, "never" ],
         "space-infix-ops": [ 2 ],
         "space-unary-ops": [ 2, { "words": true, "nonwords": false } ],
+        "spaced-comment": [ 2, "always" ],
         "yoda": [ 2, "always", {
             "onlyEquality": true
         }]

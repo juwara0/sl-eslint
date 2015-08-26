@@ -5,7 +5,7 @@ ARGS="$*"
 run_linter () {
     $ROOT_DIR/node_modules/.bin/eslint \
         --config $ROOT_DIR/.eslintrc \
-        --rulesdir $ROOT_DIR/rules \
+        --rulesdir $ROOT_DIR/lib/rules \
         $ARGS
 
     exit $?
