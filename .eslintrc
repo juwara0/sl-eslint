@@ -29,6 +29,20 @@
         "comma-dangle": [ 2, "never" ],
         "comma-spacing": [ 2, { "before": false, "after": true } ],
         "comma-style": [ 2, "last" ],
+        "enforce-newlines": [ 2, {
+            "methods": [
+                "Ember.assert",
+                "Ember.computed",
+                "Ember.observer",
+                "Ember.on"
+            ],
+            "properties": [
+                "attributeBindings",
+                "classNameBindings",
+                "classNames",
+                "needs"
+            ]
+        }],
         "eqeqeq": [ 2 ],
         "indent": [ 2, 4, { "SwitchCase": 1 } ],
         "linebreak-style": [ 2, "unix" ],
