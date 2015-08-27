@@ -29,7 +29,13 @@
         "comma-dangle": [ 2, "never" ],
         "comma-spacing": [ 2, { "before": false, "after": true } ],
         "comma-style": [ 2, "last" ],
-        "enforce-newlines": [ 2, {
+        "eqeqeq": [ 2 ],
+        "indent": [ 2, 4, { "SwitchCase": 1 } ],
+        "linebreak-style": [ 2, "unix" ],
+        "max-len": [ 2, 120, 4 ],
+        "max-literal-len": [ 2, 80 ],
+        "new-cap": [ 2, { "newIsCap": true, "capIsNew": true } ],
+        "newlines": [ 2, {
             "methods": [
                 "assert.deepEqual",
                 "assert.equal",
@@ -53,12 +59,6 @@
                 "classNames"
             ]
         }],
-        "eqeqeq": [ 2 ],
-        "indent": [ 2, 4, { "SwitchCase": 1 } ],
-        "linebreak-style": [ 2, "unix" ],
-        "max-len": [ 2, 120, 4 ],
-        "max-literal-len": [ 2, 80 ],
-        "new-cap": [ 2, { "newIsCap": true, "capIsNew": true } ],
         "no-caller": [ 2 ],
         "no-cond-assign": [ 2, "always" ],
         "no-else-return": [ 2 ],
