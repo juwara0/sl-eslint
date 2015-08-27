@@ -14,6 +14,17 @@ var RuleTester = require( 'eslint' ).RuleTester;
 // Tests
 
 var ruleTester = new RuleTester();
+var options = [
+    {
+        methods: [
+            'test.method'
+        ],
+
+        properties: [
+            'bindings'
+        ]
+    }
+];
 ruleTester.run(
     'newlines',
     rule,
@@ -23,7 +34,15 @@ ruleTester.run(
             "[\n    'okay',\n    'good'\n]",
             "var test = { okay: true }",
             "var test = {\n    okay: true\n}",
-            "[\n    'okay',\n    { okay: true }\n]"
+            "[\n    'okay',\n    { okay: true }\n]",
+            {
+                code: "[\n    test.method(\n        true\n    )\n]",
+                options: options
+            },
+            {
+                code: "var test = {\n    bindings: [\n        'okay'\n    ]\n}",
+                options: options
+            }
         ],
 
         invalid: [
@@ -45,6 +64,20 @@ ruleTester.run(
                 errors: [
                     'Object property must be delimited by newline'
                 ]
+            },
+            {
+                code: "[\n    test.method( true )\n]",
+                errors: [
+                    'Argument to `test.method` must be delimited by newline'
+                ],
+                options: options
+            },
+            {
+                code: "var test = {\n    bindings: [ 'okay' ]\n}",
+                errors: [
+                    '`bindings` must be delimited by newlines'
+                ],
+                options: options
             }
         ]
     }
