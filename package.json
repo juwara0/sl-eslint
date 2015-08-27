@@ -6,7 +6,7 @@
     "sl-eslint": "./bin/sl-eslint"
   },
   "scripts": {
-    "test": "bin/sl-eslint.js"
+    "test": "node_modules/.bin/mocha tests/lib/rules"
   },
   "repository": {
     "type": "git",
