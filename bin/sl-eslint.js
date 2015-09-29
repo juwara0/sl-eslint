@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var packageName = "sl-eslint";
+var packageName = 'sl-eslint';
 
 var path = require( 'path' );
 var child_process = require( 'child_process' );
@@ -16,7 +16,7 @@ var lintConfig = path.resolve( root, 'node_modules', packageName, '.eslintrc' );
 var lintRulesDir = path.resolve( root, 'node_modules', packageName, 'lib', 'rules' );
 
 var eslintPath = path.resolve( 'node_modules', 'sl-eslint', 'node_modules', '.bin', 'eslint' );
-var execPath = eslintPath + " --config " + lintConfig + " --rulesdir " + lintRulesDir + " " + args.join( " " );
+var execPath = eslintPath + ' --config ' + lintConfig + ' --rulesdir ' + lintRulesDir + ' ' + args.join( ' ' );
 
 var cp = child_process.exec( execPath );
 cp.stdout.pipe( process.stdout );
@@ -24,18 +24,18 @@ cp.stderr.pipe( process.stderr );
 process.stdin.pipe( cp.stdin );
 
 cp.on( 'error', function catchError( err ) {
-  console.error( 'Error executing eslint at', eslintPath );
-  console.error( err.stack );
+    console.error( 'Error executing eslint at', eslintPath );
+    console.error( err.stack );
 });
 
 cp.on( 'exit', function catchExit( code ) {
-  // Wait few ms for error to be printed.
-  setTimeout( function() {
-    process.exit( code );
-  }, 20 );
+    // Wait few ms for error to be printed.
+    setTimeout( function() {
+        process.exit( code );
+    }, 20 );
 });
 
 process.on( 'SIGTERM', function catchSigterm() {
-  cp.kill( 'SIGTERM' );
-  process.exit( 1 );
+    cp.kill( 'SIGTERM' );
+    process.exit( 1 );
 });
