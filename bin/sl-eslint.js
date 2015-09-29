@@ -19,7 +19,13 @@ if ( lintConfig = (
     exists( path.resolve( process.cwd(), 'node_modules', 'sl-eslint', '.eslintrc' ) ) ||
     exists( path.resolve( process.cwd(), '.eslintrc' ) )
 )) {
-    var cli = new CLIEngine( fs.readFileSync( lintConfig ) );
+    var cli = new CLIEngine({
+        configFile: lintConfig,
+        rulePaths: [
+            path.resolve( process.cwd(), 'node_modules', 'sl-eslint', 'lib', 'rules' ) ||
+            path.resolve( process.cwd(), 'lib', 'rules' )
+        ]
+    });
     var report = cli.executeOnFiles( process.argv.slice( 2 ) );
     var formatter = cli.getFormatter();
 
