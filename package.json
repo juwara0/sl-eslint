@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "description": "SoftLayer ESLint tool",
   "bin": {
-    "sl-eslint": "./bin/sl-eslint"
+    "sl-eslint": "./bin/sl-eslint.js"
   },
   "scripts": {
     "test": "node_modules/.bin/mocha tests/lib/rules"
