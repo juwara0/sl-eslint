@@ -5,22 +5,18 @@ module.exports = function( context ) {
         'TaggedTemplateExpression': function( node ) {
             const source = context.getSource( node );
             const startLine = node.tag.loc.start.line;
-            const regex = new RegExp( "\\w+='\\w+'", 'g' );
+            const regex = /\w+='[^']*'/g;
             const lines = source.split( "\n" );
 
-            let currentLine = startLine;
-
-            lines.forEach( function( line ) {
+            lines.forEach( function( line, index ) {
                 let match;
 
-                while (match = regex.exec( line ) ) {
+                while ( match = regex.exec( line ) ) {
                     context.report( node, {
-                        'line': currentLine,
+                        'line': ( startLine + index ),
                         'column': match.index
-                    }, 'Use double quotes for attribute value' );
+                    }, 'Use double quotes for attribute values' );
                 }
-
-                currentLine++;
             });
         }
     };
