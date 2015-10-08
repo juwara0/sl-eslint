@@ -1,5 +1,5 @@
 /**
- * @fileoverview Tests for quote-attribute-value rule
+ * @fileoverview Tests for attribute-value-quotes rule
  * @author Aziz Punjani
  */
 'use strict';
@@ -7,7 +7,7 @@
 // -----------------------------------------------------------------------------
 // Requirements
 
-var rule = require( '../../../rules/quote-attribute-value' );
+var rule = require( '../../../lib/rules/attribute-value-quotes' );
 var RuleTester = require( 'eslint' ).RuleTester;
 
 // -----------------------------------------------------------------------------
@@ -15,7 +15,7 @@ var RuleTester = require( 'eslint' ).RuleTester;
 
 var ruleTester = new RuleTester();
 
-ruleTester.run( 'quote-attribute-value ', rule, {
+ruleTester.run( 'attribute-value-quotes ', rule, {
     valid: [
         { code: 'hbs`{{#sl-test-component someAttr="someVal"}}`', ecmaFeatures: { templateStrings: true } },
         { code: 'hbs`{{#sl-test-component someAttr=someVal}}`', ecmaFeatures: { templateStrings: true } },
