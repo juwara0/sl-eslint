@@ -25,6 +25,7 @@
 
     "rules": {
         "array-bracket-spacing": [ 2, "always" ],
+        "attribute-value-quotes": [ 2 ],
         "brace-style": [ 2, "1tbs", { "allowSingleLine": false } ],
         "comma-dangle": 2,
         "comma-spacing": [ 2, { "before": false, "after": true } ],
