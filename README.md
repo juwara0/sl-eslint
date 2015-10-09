@@ -15,3 +15,9 @@ Use the `-g` option to install the tool globally.
 ```bash
 sl-eslint <directories>
 ```
+
+### Run the custom rule tests
+
+```bash
+npm test
+```
