@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/joshforisha/sl-eslint#readme",
   "dependencies": {
-    "eslint": "^1.10.1"
+    "eslint": "^1.10.2"
   },
   "devDependencies": {
     "mocha": "^2.3.4"
